@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap");
+.top-icon img, .main-photo img, .practies-photo img, .results-main-photo img, .personal-result img, .contacts-main-photo img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(73, 68, 74, 0.987);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.copyright, #header, #about-me, #my-practies, #my-results, #contacts {
+  background-image: url(/static-images/b-img-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#header, #about-me, #my-practies, #my-results, #contacts {
+  display: flex;
+  flex-basis: 1900px;
+  justify-content: center;
+}
+
+.flex-item-1, .flex-item-2, .flex-item-4 {
+  display: flex;
+  flex-basis: 1600px;
+  flex-direction: column;
+}
+
+.flex-container, .flex-item {
+  display: flex;
+  flex-basis: 1600px;
+  justify-content: space-between;
+}
+
+a {
+  color: rgba(129, 114, 144, 0.818);
+  text-decoration: none;
+  transition: 1s;
+}
+a:hover {
+  transform: scale(1.2);
+}
+
+body {
+  font-size: 20px;
+  border: 2px solid rgba(129, 114, 144, 0.818);
+  border-radius: 5px;
+  position: relative;
+  min-height: 100vh;
+}
+
+.heading,
+.practies-text,
+.results-text,
+.article-text {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: rgba(129, 114, 144, 0.818);
+  padding: 5px;
+  margin: 20px 10px;
+}
+
+.separator {
+  max-width: 2000px;
+  border-color: rgba(129, 114, 144, 0.818);
+  margin: 0;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  color: rgba(129, 114, 144, 0.818);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+}
+
+.flex-container {
+  align-items: center;
+  border: 2px solid rgba(129, 114, 144, 0.818);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.header-icon {
+  display: flex;
+  flex-basis: 100px;
+  flex-shrink: 0;
+}
+
+.top-icon {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+}
+.top-icon:hover {
+  transform: none;
+}
+
+.header-nav {
+  display: flex;
+  flex-basis: 1000px;
+}
+
+.top-nav {
+  display: flex;
+  flex-basis: 1000px;
+  margin: 5px;
+}
+
+.top-nav-list {
+  display: flex;
+  flex-basis: 1000px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+  padding: 0;
+}
+.top-nav-list li {
+  display: flex;
+  margin: 5px;
+}
+.top-nav-list li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.flex-item {
+  align-items: flex-start;
+  margin: 105px 10px 20px;
+}
+
+.main-photo {
+  display: flex;
+  flex-basis: 260px;
+  flex-shrink: 0;
+}
+.main-photo .main-photo-w {
+  display: flex;
+  flex-basis: 260px;
+}
+.main-photo img {
+  width: 86%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-text {
+  display: flex;
+  flex-basis: 1000px;
+  flex-direction: column;
+}
+
+.text-1 {
+  color: rgba(129, 114, 144, 0.818);
+  margin: 0.83em 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.social-icons-list {
+  display: flex;
+}
+.social-icons-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 700px;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.social-icon-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.social-icon-logo {
+  width: 40px;
+}
+
+.link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.flex-item-1 {
+  align-items: center;
+  margin: 105px 10px 20px;
+}
+
+.flex-item-practies-w {
+  display: flex;
+  flex-basis: 1600px;
+}
+
+.flex-item-practies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.my-practies {
+  display: flex;
+  flex-basis: 340px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  align-content: start;
+  border: 2px solid rgba(129, 114, 144, 0.818);
+  border-radius: 10px;
+  margin: 5px 15px;
+  background-image: url(/static-images/b-img-4-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.practies-photo {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 450px;
+  margin-top: 20px;
+}
+
+.text-2 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.flex-item-2 {
+  align-items: center;
+  margin: 105px 10px 20px;
+}
+
+.results-main-photo {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  margin: 20px;
+}
+.results-main-photo .results-main-photo-w {
+  display: flex;
+  flex-basis: 500px;
+}
+.results-main-photo img {
+  margin-bottom: 10px;
+  transition: 1.5s;
+}
+.results-main-photo img:hover {
+  transform: scale(1.2);
+  transition: all 1.5s;
+}
+
+.flex-item-results-w {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-item-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.personal-result {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 225px;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.personal-result img {
+  transition: 1.5s;
+}
+.personal-result img:hover {
+  transform: scale(1.4);
+  transition: all 1.5s;
+}
+
+.vertical-result {
+  width: 300px;
+  height: 400px;
+}
+.vertical-result .vertical-img {
+  width: 100%;
+  height: 100%;
+}
+
+.flex-item-4 {
+  align-items: flex-start;
+  margin: 105px 10px 20px;
+}
+
+.flex-item-contacts-w {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-item-contacts {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 100px;
+}
+
+.contacts-main-photo {
+  display: flex;
+  flex-basis: 300px;
+  flex-shrink: 0;
+  margin: 10px;
+}
+
+.contacts-main-text {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.contacts-social-icons-list {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 1180px) {
+  .flex-item-practies {
+    justify-content: space-around;
+  }
+  .flex-item-practies .my-practies:nth-child(1) {
+    order: -1;
+  }
+  .flex-item-practies .my-practies:nth-child(2) {
+    order: 1;
+  }
+}
+@media screen and (max-width: 770px) {
+  .flex-container {
+    flex-basis: 700px;
+    align-items: center;
+  }
+  .flex-container .header-icon {
+    flex-basis: 60px;
+    flex-shrink: 0;
+    position: fixed;
+    top: 17px;
+  }
+  .flex-container .header-icon .top-icon {
+    width: 100%;
+  }
+  .flex-container .header-icon .top-icon img {
+    width: 80px;
+  }
+  .flex-container .header-nav {
+    justify-content: center;
+    flex-basis: 220px;
+    flex-grow: 2;
+  }
+  .flex-container .header-nav .top-nav {
+    flex-basis: 200px;
+  }
+
+  .top-nav-list {
+    flex-direction: column;
+    padding: 0;
+    margin: 10px;
+  }
+
+  .flex-item-4 {
+    align-items: center;
+    flex-basis: 800px;
+  }
+  .flex-item-4 .flex-item-contacts-w {
+    display: flex;
+    justify-content: center;
+  }
+
+  .flex-item-contacts {
+    flex-direction: column;
+    flex-basis: 450px;
+    gap: 0;
+  }
+  .flex-item-contacts .contacts-main-photo {
+    flex-basis: 300px;
+  }
+  .flex-item-contacts .contacts-main-photo img {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .flex-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex-item .main-photo {
+    flex-basis: 300px;
+    align-content: center;
+    justify-content: center;
+  }
+  .flex-item .main-photo .main-photo-w {
+    align-items: center;
+    flex-basis: 300px;
+  }
+  .flex-item .main-photo .main-photo-w img {
+    width: 250px;
+  }
+  .flex-item .main-text {
+    flex-basis: 750px;
+  }
+}

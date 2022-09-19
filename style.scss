@@ -1,0 +1,456 @@
+$ff1: "Montserrat", sans-serif;
+$fw1: 100;
+$fw2: 300;
+$fw3: 600;
+$fc: rgba(129, 114, 144, 0.818);
+$bi1: url(/static-images/b-img-4.jpg);
+$bc1: rgb(251, 246, 251);
+
+%image-properties {
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(73, 68, 74, 0.987);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+%bg-properties {
+  background-image: $bi1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+%section-properties {
+  display: flex;
+  flex-basis: 1900px;
+  justify-content: center;
+}
+%item-col-properties {
+  display: flex;
+  flex-basis: 1600px;
+  flex-direction: column;
+}
+%item-row-properties {
+  display: flex;
+  flex-basis: 1600px;
+  justify-content: space-between;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap");
+
+a {
+  color: $fc;
+  text-decoration: none;
+  transition: 1s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+body {
+  font-size: 20px;
+  border: 2px solid $fc;
+  border-radius: 5px;
+  position: relative;
+  min-height: 100vh;
+}
+
+.heading,
+.practies-text,
+.results-text,
+.article-text {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  font-family: $ff1;
+  font-weight: $fw3;
+  color: $fc;
+  padding: 5px;
+  margin: 20px 10px;
+}
+.separator {
+  max-width: 2000px;
+  border-color: $fc;
+  margin: 0;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  color: $fc;
+  font: {
+    family: $ff1;
+    weight: $fw3;
+  }
+  @extend %bg-properties;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  @extend %section-properties;
+  @extend %bg-properties;
+}
+.flex-container {
+  @extend %item-row-properties;
+  align-items: center;
+  border: 2px solid $fc;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+.header-icon {
+  display: flex;
+  flex-basis: 100px;
+  flex-shrink: 0;
+}
+.top-icon {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  img {
+    @extend %image-properties;
+  }
+  &:hover {
+    transform: none;
+  }
+}
+.header-nav {
+  display: flex;
+  flex-basis: 1000px;
+}
+.top-nav {
+  display: flex;
+  flex-basis: 1000px;
+  margin: 5px;
+}
+.top-nav-list {
+  display: flex;
+  flex-basis: 1000px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+  padding: 0;
+  li {
+    display: flex;
+    margin: 5px;
+    a {
+      font: {
+        family: $ff1;
+        weight: $fw3;
+      }
+    }
+  }
+}
+
+#about-me {
+  @extend %section-properties;
+  @extend %bg-properties;
+}
+.flex-item {
+  @extend %item-row-properties;
+  align-items: flex-start;
+  margin: 105px 10px 20px;
+}
+.main-photo {
+  display: flex;
+  flex-basis: 260px;
+  flex-shrink: 0;
+  .main-photo-w {
+    display: flex;
+    flex-basis: 260px;
+  }
+  img {
+    @extend %image-properties;
+    width: 86%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.main-text {
+  display: flex;
+  flex-basis: 1000px;
+  flex-direction: column;
+}
+.text-1 {
+  color: $fc;
+  margin: 0.83em 0;
+  font: {
+    family: $ff1;
+    weight: $fw2;
+  }
+}
+.social-icons-list {
+  display: flex;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 700px;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+.social-icon {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+  text-decoration: none;
+}
+.social-icon-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font: {
+    family: $ff1;
+    weight: $fw3;
+  }
+}
+.social-icon-logo {
+  width: 40px;
+}
+.link {
+  font: {
+    family: $ff1;
+    weight: $fw3;
+  }
+}
+
+#my-practies {
+  @extend %section-properties;
+  @extend %bg-properties;
+}
+.flex-item-1 {
+  @extend %item-col-properties;
+  align-items: center;
+  margin: 105px 10px 20px;
+}
+.flex-item-practies-w {
+  display: flex;
+  flex-basis: 1600px;
+}
+.flex-item-practies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.my-practies {
+  display: flex;
+  flex-basis: 340px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  align-content: start;
+  border: 2px solid $fc;
+  border-radius: 10px;
+  margin: 5px 15px;
+  background-image: url(/static-images/b-img-4-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.practies-photo {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 450px;
+  margin-top: 20px;
+  img {
+    @extend %image-properties;
+  }
+}
+.text-2 {
+  margin: 0;
+  font: {
+    family: $ff1;
+    weight: $fw2;
+  }
+}
+
+#my-results {
+  @extend %section-properties;
+  @extend %bg-properties;
+}
+.flex-item-2 {
+  @extend %item-col-properties;
+  align-items: center;
+  margin: 105px 10px 20px;
+}
+.results-main-photo {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  margin: 20px;
+  .results-main-photo-w {
+    display: flex;
+    flex-basis: 500px;
+  }
+  img {
+    @extend %image-properties;
+    margin-bottom: 10px;
+    transition: 1.5s;
+    &:hover {
+      transform: scale(1.2);
+      transition: all 1.5s;
+    }
+  }
+}
+.flex-item-results-w {
+  display: flex;
+  justify-content: center;
+}
+.flex-item-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.personal-result {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 225px;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+  img {
+    @extend %image-properties;
+    transition: 1.5s;
+    &:hover {
+      transform: scale(1.4);
+      transition: all 1.5s;
+    }
+  }
+}
+.vertical-result {
+  width: 300px;
+  height: 400px;
+  .vertical-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#contacts {
+  @extend %section-properties;
+  @extend %bg-properties;
+}
+.flex-item-4 {
+  @extend %item-col-properties;
+  align-items: flex-start;
+  margin: 105px 10px 20px;
+}
+.flex-item-contacts-w {
+  display: flex;
+  justify-content: center;
+}
+.flex-item-contacts {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 100px;
+}
+.contacts-main-photo {
+  display: flex;
+  flex-basis: 300px;
+  flex-shrink: 0;
+  margin: 10px;
+  img {
+    @extend %image-properties;
+  }
+}
+.contacts-main-text {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+.contacts-social-icons-list {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 1180px) {
+  .flex-item-practies {
+    justify-content: space-around;
+    .my-practies:nth-child(1) {
+      order: -1;
+    }
+    .my-practies:nth-child(2) {
+      order: 1;
+    }
+  }
+}
+@media screen and (max-width: 770px) {
+  .flex-container {
+    flex-basis: 700px;
+    align-items: center;
+    .header-icon {
+      flex-basis: 60px;
+      flex-shrink: 0;
+      position: fixed;
+      top: 17px;
+      .top-icon {
+        width: 100%;
+        img {
+          width: 80px;
+        }
+      }
+    }
+    .header-nav {
+      justify-content: center;
+      flex-basis: 220px;
+      flex-grow: 2;
+      .top-nav {
+        flex-basis: 200px;
+      }
+    }
+  }
+  .top-nav-list {
+    flex-direction: column;
+    padding: 0;
+    margin: 10px;
+  }
+  .flex-item-4 {
+    align-items: center;
+    flex-basis: 800px;
+    .flex-item-contacts-w {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .flex-item-contacts {
+    flex-direction: column;
+    flex-basis: 450px;
+    gap: 0;
+    .contacts-main-photo {
+      flex-basis: 300px;
+      img {
+        width: 250px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .flex-item {
+    flex-direction: column;
+    align-items: center;
+    .main-photo {
+      flex-basis: 300px;
+      align-content: center;
+      justify-content: center;
+      .main-photo-w {
+        align-items: center;
+        flex-basis: 300px;
+        img {
+          width: 250px;
+        }
+      }
+    }
+    .main-text {
+      flex-basis: 750px;
+    }
+  }
+}
